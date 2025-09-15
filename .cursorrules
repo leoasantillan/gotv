@@ -1,0 +1,67 @@
+# GOTV Project - Cursor Rules
+
+## Project Overview
+This is a Nuxt 3 application with TypeScript and Tailwind CSS for a Get Out The Vote (GOTV) platform.
+
+## Technology Stack
+- **Framework**: Nuxt 3 (latest)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Package Manager**: npm (required)
+- **Node Version**: v22 (managed with nvm - see .nvmrc)
+
+## Development Guidelines
+
+### Node.js & Package Management
+- Always use Node.js v22 (run `nvm use` to switch to correct version)
+- Use npm as the package manager - never use yarn or pnpm
+- Run `nvm use` before any npm commands to ensure correct Node version
+
+### Code Style & Standards
+- Use TypeScript for all new files
+- Follow Vue 3 Composition API patterns
+- Use `<script setup>` syntax for components
+- Prefer TypeScript interfaces over types when defining object shapes
+- Use camelCase for variables and functions, PascalCase for components
+
+### Tailwind CSS Guidelines
+- Use Tailwind utility classes for styling
+- Avoid custom CSS unless absolutely necessary
+- Use Tailwind's responsive design utilities (sm:, md:, lg:, xl:, 2xl:)
+- Follow mobile-first responsive design approach
+
+### File Structure
+- Components go in `components/` directory
+- Pages go in `pages/` directory
+- Composables go in `composables/` directory
+- Utils go in `utils/` directory
+- Types go in `types/` directory
+
+### Git Workflow
+- Create feature branches from master
+- Use conventional commit messages
+- Always test locally before pushing
+- Create PRs for all changes
+
+### Performance & Best Practices
+- Use Nuxt's auto-imports where possible
+- Lazy load components when appropriate
+- Optimize images and assets
+- Use Nuxt's built-in SEO features
+
+### Testing
+- Write tests for critical functionality
+- Use Vitest for unit tests
+- Test components with Vue Test Utils
+
+## Commands
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run generate` - Generate static site
+- `npm run preview` - Preview production build
+
+## Environment Setup
+1. Ensure Node.js v22 is installed via nvm
+2. Run `nvm use` to switch to correct version
+3. Run `npm install` to install dependencies
+4. Run `npm run dev` to start development server
